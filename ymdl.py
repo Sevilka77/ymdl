@@ -23,6 +23,9 @@
 # TODO:
 # * Authentication for downloading private playlists.
 
+from win_unicode_console import streams # > pip install win_unicode_console
+streams.enable() # replace stdin/stdout/stderr read/write with Win32 calls
+
 import argparse
 import logging
 
